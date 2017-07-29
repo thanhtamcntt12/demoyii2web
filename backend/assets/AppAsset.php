@@ -26,6 +26,7 @@ class AppAsset extends AssetBundle
         'vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js',
         'vendors/jquery.hotkeys/jquery.hotkeys.js',
         'vendors/google-code-prettify/src/prettify.js',
+        'build/js/custom.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
