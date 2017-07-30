@@ -49,4 +49,12 @@ class Group extends \yii\db\ActiveRecord
             'updated_at' => 'Updated At',
         ];
     }
+
+    public function getAllGroup(){
+        $data = Group::find()
+            ->where(['status' => '1'])
+            ->asArray()
+            ->all();
+        return $data;
+    }
 }

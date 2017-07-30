@@ -65,7 +65,7 @@ AppAsset::register($this);
                   <li><a>"><i class="fa fa-edit"></i>Form <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo Yii::$app->homeUrl.'/group' ?>">Nhóm danh mục</a></li>
-                      <li><a href="<?php echo Yii::$app->homeUrl.'/category' ?>">Danh mục</a></li>
+                      <li><a href="<?php echo Yii::$app->homeUrl.'/danhmuc' ?>">Danh mục</a></li>
                       <li><a href="form_validation.html">Form Validation</a></li>
                       <li><a href="form_wizards.html">Form Wizard</a></li>
                       <li><a href="form_upload.html">Form Upload</a></li>
