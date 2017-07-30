@@ -62,17 +62,17 @@ AppAsset::register($this);
                       <li><a href="index3.html">Dashboard3</a></li>
                     </ul>
                   </li>
-                  <li><a href="<?php echo Yii::$app->homeUrl.'/group' ?>"><i class="fa fa-edit"></i> Nhóm danh mục <span class="fa fa-chevron-down"></span></a>
+                  <li><a>"><i class="fa fa-edit"></i>Form <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo Yii::$app->homeUrl.'/group' ?>">Nhóm danh mục</a></li>
-                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="<?php echo Yii::$app->homeUrl.'/category' ?>">Danh mục</a></li>
                       <li><a href="form_validation.html">Form Validation</a></li>
                       <li><a href="form_wizards.html">Form Wizard</a></li>
                       <li><a href="form_upload.html">Form Upload</a></li>
                       <li><a href="form_buttons.html">Form Buttons</a></li>
                     </ul>
                   </li>
-                  <li><a href="<?php echo Yii::$app->homeUrl.'/category' ?>"><i class="fa fa-desktop"></i> Danh mục <span class="fa fa-chevron-down"></span></a>
+                  <li><a href=">"><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="general_elements.html">General Elements</a></li>
                       <li><a href="media_gallery.html">Media Gallery</a></li>
