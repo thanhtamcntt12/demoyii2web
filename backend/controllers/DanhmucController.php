@@ -69,12 +69,21 @@ class DanhmucController extends Controller
         $group = new Group();
         $dataGroup = ArrayHelper::map($group->getAllGroup(),'idGroups','groupsName');
 
+        $dataCat = $model->getCategoryParent();
+        if(empty($dataCat))
+            $dataCat = array();
+
+        $time = time();
+        $model->created_at = $time;
+        $model->updated_at = $time;
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->idCate]);
         } else {
             return $this->render('create', [
                 'model' => $model,
-                'dataGroup' => $dataGroup
+                'dataGroup' => $dataGroup,
+                'dataCat' => $dataCat
             ]);
         }
     }

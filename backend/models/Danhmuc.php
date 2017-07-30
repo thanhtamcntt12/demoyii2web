@@ -62,4 +62,22 @@ class Danhmuc extends \yii\db\ActiveRecord
             'updated_at' => 'Updated At',
         ];
     }
+
+    public $data;
+    public function getCategoryParent($parent = 0, $level =""){
+        $result = Danhmuc::find()->asArray()
+        ->where('Parentid = :parent', ['parent'=>$parent])
+        ->all();
+        $level .= "-";
+        foreach ($result as $key => $value) {
+            if($parent==0){
+                $level ="";
+            }
+            $this->data[$value["idCate"]] = $level.$value["CateName"];
+            // de quy : goi lai chinh no
+            self::getCategoryParent($value["idCate"], $level);
+        }
+
+        return $this->data;
+    }
 }

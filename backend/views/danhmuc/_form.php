@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Groupsid')->dropDownList($dataGroup, ['prompt' => '-Chọn danh mục-']) ?>
 
-    <?= $form->field($model, 'Parentid')->textInput() ?>
+    <?= $form->field($model, 'Parentid')->dropDownList($dataCat, ['prompt' => '-Chọn danh mục-']) ?>
 
     <?= $form->field($model, 'Keywords')->textInput(['maxlength' => true]) ?>
 

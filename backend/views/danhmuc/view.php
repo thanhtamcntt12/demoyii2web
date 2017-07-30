@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\Danhmuc */
 
 $this->title = $model->idCate;
-$this->params['breadcrumbs'][] = ['label' => 'Danhmucs', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Category', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="danhmuc-view">
